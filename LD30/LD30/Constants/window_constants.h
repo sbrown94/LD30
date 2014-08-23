@@ -1,13 +1,3 @@
-/*
-*	FileName: window_constants.h
-*	Author:	David Hudson
-*	Date: 18/06/14
-*	Edits: 
-*	Acknowledgements:
-*	
-*	Description: Header filled with window constants	
-*/
-
 #pragma once
 
 //Window details

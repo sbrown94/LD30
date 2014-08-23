@@ -1,16 +1,3 @@
-/*
-*	FileName: state.h
-*	Author:	Ryan Simpson
-*	Date: 12/06/14
-*	Edits: 
-*	Acknowledgements:
-*	
-*	Description: Abstract class for State
-*				Holds the enumeration type for the different game states
-*				Also contains the current and previous states of the game using this enumeration
-*				And the window to render the state on
-*/
-
 #pragma once
 
 //sfml includes
