@@ -36,7 +36,7 @@ sf::Vector2f Player::GetSpeed()
 	return mSpeed;
 }
 
-void Player::Update()
+void Player::UpdateSpeed()
 {
 	mSpeed.x = 0;
 	if(mIsFalling)
@@ -66,7 +66,10 @@ void Player::Update()
 	{
 		mJumpKeyPressed = false;
 	}
+}
 
+void Player::UpdatePosition()
+{
 	mBox->setPosition(mBox->getPosition().x+mSpeed.x, mBox->getPosition().y+mSpeed.y);
 
 	if(mBox->getPosition().y > 514)

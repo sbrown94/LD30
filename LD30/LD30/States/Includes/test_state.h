@@ -4,6 +4,7 @@
 #include "level_1.h"
 #include "sky_tile.h"
 #include "grass_tile.h"
+#include "player.h"
 
 #include "window_constants.h"
 
@@ -20,4 +21,5 @@ public:
 private:
 	Level* mCurrentLevel;
 	Tile* mTestGrid[MAP_WIDTH][MAP_HEIGHT];
+	Player* mPlayer;
 };

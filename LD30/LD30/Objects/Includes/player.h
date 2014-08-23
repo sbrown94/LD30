@@ -9,7 +9,8 @@ public:
 	Player();
 	~Player();
 
-	void Update();
+	void UpdatePosition();
+	void UpdateSpeed();
 
 	void SetIsFalling(bool _falling);
 

@@ -5,6 +5,8 @@ State(_window)
 {
 	mCurrentLevel = new Level1();
 
+	mPlayer = new Player();
+
 	//allocate the map space to different tiles
 	for(int xIndex = 0; xIndex < MAP_WIDTH; xIndex++)
 	{
@@ -31,6 +33,9 @@ void TestState::Initialise()
 
 void TestState::Update()
 {
+	mPlayer->UpdateSpeed();
+	//check collisions
+	mPlayer->UpdatePosition();
 }
 
 void TestState::Render()
@@ -47,6 +52,8 @@ void TestState::Render()
 			mWindow->draw(*mTestGrid[xIndex][yIndex]);
 		}
 	}
+
+	mWindow->draw(*mPlayer->GetSprite());
 
     mWindow->display();
 }
