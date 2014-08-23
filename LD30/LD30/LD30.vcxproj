@@ -50,7 +50,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/SDKs/SFML-2.1/Include;$(ProjectDir)States/Includes;$(ProjectDir)Constants;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:/SDKs/SFML-2.1/Include;$(ProjectDir)States/Includes;$(ProjectDir)Constants;$(ProjectDir)Objects/Includes</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -68,7 +68,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:/SDKs/SFML-2.1/Include;$(ProjectDir)States/Includes;$(ProjectDir)Constants;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:/SDKs/SFML-2.1/Include;$(ProjectDir)States/Includes;$(ProjectDir)Constants;$(ProjectDir)Objects/Includes</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -81,12 +81,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Objects\Source\test_tile.cpp" />
+    <ClCompile Include="Objects\Source\tile.cpp" />
     <ClCompile Include="States\Source\state.cpp" />
     <ClCompile Include="States\Source\state_manager.cpp" />
     <ClCompile Include="States\Source\test_state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants\window_constants.h" />
+    <ClInclude Include="Objects\Includes\test_tile.h" />
+    <ClInclude Include="Objects\Includes\tile.h" />
     <ClInclude Include="States\Includes\state.h" />
     <ClInclude Include="States\Includes\state_manager.h" />
     <ClInclude Include="States\Includes\test_state.h" />

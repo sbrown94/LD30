@@ -1,16 +1,15 @@
-﻿Build started 23/08/2014 01:52:56.
+﻿Build started 23/08/2014 03:43:14.
      1>Project "C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\LD30.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\LD30.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:/SDKs/SFML-2.1/Include" /I"C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\States/Includes" /I"C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\Constants" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D SFML_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt States\Source\state_manager.cpp States\Source\test_state.cpp main.cpp
-         state_manager.cpp
-         Generating Code...
-         Compiling...
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:/SDKs/SFML-2.1/Include" /I"C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\States/Includes" /I"C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\Constants" /I"C:\Users\David\Documents\Git Repos\LD30\LD30\LD30\Objects/Includes" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D SFML_STATIC /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp States\Source\state.cpp States\Source\state_manager.cpp States\Source\test_state.cpp
          test_state.cpp
-     1>c:\users\david\documents\git repos\ld30\ld30\ld30\states\source\test_state.cpp(12): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>c:\users\david\documents\git repos\ld30\ld30\ld30\states\source\test_state.cpp(12): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\david\documents\git repos\ld30\ld30\ld30\states\source\test_state.cpp(11): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>c:\users\david\documents\git repos\ld30\ld30\ld30\states\source\test_state.cpp(11): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+         state_manager.cpp
+         state.cpp
+         main.cpp
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\David\Documents\Git Repos\LD30\LD30\Debug\LD30.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:/SDKs/SFML-2.1/lib" "sfml-main.lib" "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\LD30.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\David\Documents\Git Repos\LD30\LD30\Debug\LD30.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\David\Documents\Git Repos\LD30\LD30\Debug\LD30.lib" /MACHINE:X86 Debug\main.obj
@@ -68,4 +67,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.92
+Time Elapsed 00:00:02.72
