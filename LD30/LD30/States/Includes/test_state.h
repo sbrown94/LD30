@@ -1,6 +1,9 @@
 #pragma once
 
 #include "state.h"
+#include "level_1.h"
+#include "sky_tile.h"
+#include "grass_tile.h"
 
 #include "window_constants.h"
 
@@ -15,5 +18,6 @@ public:
 	void CleanUp();
 
 private:
-	sf::RectangleShape* mTestGrid[MAP_WIDTH][MAP_HEIGHT];
+	Level* mCurrentLevel;
+	Tile* mTestGrid[MAP_WIDTH][MAP_HEIGHT];
 };
