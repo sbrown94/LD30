@@ -15,7 +15,7 @@ int main()
 {
 	//create and initialise the window
     sf::RenderWindow *window;
-	window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "TS Wars");
+	window = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_NAME);
 	
 	//create and initialise the state manager
 	StateManager *stateManager;

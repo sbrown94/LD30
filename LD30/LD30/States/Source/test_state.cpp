@@ -8,10 +8,8 @@ State(_window)
 	{
 		for(int yIndex = 0; yIndex < MAP_HEIGHT; yIndex++)
 		{
-			mTestGrid[xIndex][yIndex] = new sf::RectangleShape(sf::Vector2f(10, 10));
-			mTestGrid[xIndex][yIndex]->setPosition(xIndex * 11, yIndex * 11);
-			//e.g. mMap[xIndex][yIndex] = new PlainsTile(xIndex * TILE_WIDTH, yIndex * TILE_HEIGHT);
-			//e.g. mMap[xIndex][yIndex] = new MarshTile(xIndex * TILE_WIDTH, yIndex * TILE_HEIGHT);
+			mTestGrid[xIndex][yIndex] = new sf::RectangleShape(sf::Vector2f(TILE_SIZE, TILE_SIZE));
+			mTestGrid[xIndex][yIndex]->setPosition(xIndex * (mTestGrid[xIndex][yIndex]->getSize().x + 1), yIndex * (mTestGrid[xIndex][yIndex]->getSize().y + 1));
 		}
 	}
 }
