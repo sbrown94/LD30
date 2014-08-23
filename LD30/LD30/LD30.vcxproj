@@ -81,7 +81,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Objects\Source\test_tile.cpp" />
+    <ClCompile Include="Objects\Source\level.cpp" />
+    <ClCompile Include="Objects\Source\level_1.cpp" />
+    <ClCompile Include="Objects\Source\sky_tile.cpp" />
+    <ClCompile Include="Objects\Source\grass_tile.cpp" />
     <ClCompile Include="Objects\Source\tile.cpp" />
     <ClCompile Include="States\Source\state.cpp" />
     <ClCompile Include="States\Source\state_manager.cpp" />
@@ -89,7 +92,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants\window_constants.h" />
-    <ClInclude Include="Objects\Includes\test_tile.h" />
+    <ClInclude Include="Objects\Includes\level.h" />
+    <ClInclude Include="Objects\Includes\level_1.h" />
+    <ClInclude Include="Objects\Includes\sky_tile.h" />
+    <ClInclude Include="Objects\Includes\grass_tile.h" />
     <ClInclude Include="Objects\Includes\tile.h" />
     <ClInclude Include="States\Includes\state.h" />
     <ClInclude Include="States\Includes\state_manager.h" />

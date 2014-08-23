@@ -3,13 +3,19 @@
 TestState::TestState(sf::RenderWindow *_window):
 State(_window)
 {
+	mCurrentLevel = new Level1();
+
 	//allocate the map space to different tiles
 	for(int xIndex = 0; xIndex < MAP_WIDTH; xIndex++)
 	{
 		for(int yIndex = 0; yIndex < MAP_HEIGHT; yIndex++)
 		{
-			mTestGrid[xIndex][yIndex] = new sf::RectangleShape(sf::Vector2f(TILE_SIZE, TILE_SIZE));
-			mTestGrid[xIndex][yIndex]->setPosition(xIndex * (mTestGrid[xIndex][yIndex]->getSize().x + 1), yIndex * (mTestGrid[xIndex][yIndex]->getSize().y + 1));
+			if(mCurrentLevel->levelData(xIndex, yIndex) == 0)
+				mTestGrid[xIndex][yIndex] = new SkyTile();
+			else if(mCurrentLevel->levelData(xIndex, yIndex) == 1)
+				mTestGrid[xIndex][yIndex] = new GrassTile();
+
+			mTestGrid[xIndex][yIndex]->setPosition(xIndex * (TILE_SIZE + 1), yIndex * (TILE_SIZE + 1));
 		}
 	}
 }

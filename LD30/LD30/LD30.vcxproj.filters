@@ -27,10 +27,19 @@
     <ClCompile Include="States\Source\test_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Objects\Source\test_tile.cpp">
+    <ClCompile Include="Objects\Source\tile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Objects\Source\tile.cpp">
+    <ClCompile Include="Objects\Source\sky_tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Source\level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Source\level_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Source\grass_tile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,10 +56,19 @@
     <ClInclude Include="Constants\window_constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Objects\Includes\test_tile.h">
+    <ClInclude Include="Objects\Includes\tile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Objects\Includes\tile.h">
+    <ClInclude Include="Objects\Includes\sky_tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Includes\level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Includes\level_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Includes\grass_tile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
